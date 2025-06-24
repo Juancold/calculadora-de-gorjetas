@@ -1,0 +1,90 @@
+/* Importando uma fonte mais bonita do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que o corpo ocupe a altura toda da tela */
+    margin: 0;
+}
+
+/* O container principal da nossa calculadora */
+.calculator-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Largura máxima da calculadora */
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+/* Estilo para cada grupo de label + input */
+.form-control {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-control label {
+    display: block; /* Faz o label ficar em cima do campo */
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-control input,
+.form-control select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+}
+
+/* Botão de Calcular */
+#calculateBtn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3498db; /* Um azul amigável */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#calculateBtn:hover {
+    background-color: #2980b9; /* Um azul um pouco mais escuro no hover */
+}
+
+/* Área de Resultados */
+#results {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: left;
+}
+
+#results p {
+    font-size: 18px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between; /* Alinha o texto e o valor */
+}
+
+#results span {
+    font-weight: bold;
+    color: #2c3e50;
+}
